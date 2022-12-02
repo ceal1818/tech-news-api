@@ -1,0 +1,46 @@
+
+services:
+  tech-news:
+    build: reverse-proxy
+    ports:
+      - 80:80
+    depends_on:
+      - tn-news-mgmt
+    restart: always
+
+  tn-news-mgmt:
+    build: tn-news-mgmt
+    environment:
+      - MONGODB_USERNAME=${TN_DDBB_USER}
+      - MONGODB_PASSWORD=${TN_DDBB_PASS}
+      - MONGODB_DATABASE=posts
+      - MONGODB_HOST=mongodb
+      - MONGODB_PORT=27017
+      - ENVIRONMENT=${TN_APP_ENV}
+    ports:
+      - 8080
+    command: npm start
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    volumes:
+      - ./tn-news-mgmt:/tn-news-mgmt
+
+  mongodb:
+    image: docker.io/bitnami/mongodb:4.0.12-debian-9-r43
+    environment:
+      - MONGODB_USERNAME=${TN_DDBB_USER}
+      - MONGODB_PASSWORD=${TN_DDBB_PASS}
+      - MONGODB_DATABASE=posts
+      - MONGODB_ROOT_PASSWORD=${TN_DDBB_ROOT_PASS}
+      - MONGODB_SYSTEM_LOG_VERBOSITY=0
+      - MONGODB_DISABLE_SYSTEM_LOG=no
+      - MONGODB_ENABLE_IPV6=no
+      - MONGODB_ENABLE_DIRECTORY_PER_DB=no
+    ports:
+      - 27017
+    volumes:
+      - data:/bitnami/mongodb
+
+volumes:
+  data:

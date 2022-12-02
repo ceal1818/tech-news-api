@@ -1,0 +1,32 @@
+[
+    {
+        "uuid": "41fabc3b-154f-4d57-bc21-80e47f0cb712",
+        "title": "My first post!!!",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta suscipit faucibus. Donec id scelerisque augue, a faucibus mauris. Quisque tincidunt sit amet diam at auctor. Integer eu ligula ante. Integer mollis hendrerit metus, ac semper ex. Suspendisse tempor felis libero, quis auctor felis convallis ac. Donec lorem est, ultricies ut magna vel, rutrum ultrices felis. Donec finibus massa et lacus condimentum efficitur. Donec vulputate leo vel faucibus commodo. Cras libero mi, tempor interdum odio ac, tincidunt porta orci. Aenean lacinia enim non vehicula egestas. Suspendisse ultricies sollicitudin risus.",
+        "anonymous": true,
+        "authorUuid": null,
+        "wasDeleted": false,
+        "createdAt": "2022-10-12",
+        "updatedAt": null
+    },
+    {
+        "uuid": "017c61f9-5fb6-4de3-afcf-8f80a2eba541",
+        "title": "Today is the best time",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta suscipit faucibus. Donec id scelerisque augue, a faucibus mauris. Quisque tincidunt sit amet diam at auctor. Integer eu ligula ante. Integer mollis hendrerit metus, ac semper ex. Suspendisse tempor felis libero, quis auctor felis convallis ac. Donec lorem est, ultricies ut magna vel, rutrum ultrices felis. Donec finibus massa et lacus condimentum efficitur. Donec vulputate leo vel faucibus commodo. Cras libero mi, tempor interdum odio ac, tincidunt porta orci. Aenean lacinia enim non vehicula egestas. Suspendisse ultricies sollicitudin risus.",
+        "anonymous": true,
+        "authorUuid": null,
+        "wasDeleted": false,
+        "createdAt": "2022-10-13",
+        "updatedAt": null
+    },
+    {
+        "uuid": "009c0d26-871d-4163-a8ec-e5f9a653637f",
+        "title": "My third post",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta suscipit faucibus. Donec id scelerisque augue, a faucibus mauris. Quisque tincidunt sit amet diam at auctor. Integer eu ligula ante. Integer mollis hendrerit metus, ac semper ex. Suspendisse tempor felis libero, quis auctor felis convallis ac. Donec lorem est, ultricies ut magna vel, rutrum ultrices felis. Donec finibus massa et lacus condimentum efficitur. Donec vulputate leo vel faucibus commodo. Cras libero mi, tempor interdum odio ac, tincidunt porta orci. Aenean lacinia enim non vehicula egestas. Suspendisse ultricies sollicitudin risus.",
+        "anonymous": true,
+        "authorUuid": null,
+        "wasDeleted": false,
+        "createdAt": "2022-10-21",
+        "updatedAt": null
+    }
+]
